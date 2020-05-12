@@ -1,0 +1,18 @@
+<h1>JS0</h1>
+<h2>challenge1</h2>
+
+<input class="in1" type="number">in1</input>
+<input class="in2" type="number">in2</input>
+<button class="btn">Submit</button>
+
+<script>
+    const in1dqs = document.querySelector(".in1");
+    const in2dqs = document.querySelector(".in2");
+    const btndqs = document.querySelector(".btn");
+    btndqs.onclick = () => {
+        const in1v = +in1dqs.value;
+        const in2v = +in2dqs.value;
+        alert("Sum of the Two Inputs = ");
+        alert(in1v + in2v);
+    }
+</script>
