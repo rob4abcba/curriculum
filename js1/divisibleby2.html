@@ -1,0 +1,22 @@
+<h1>JS1</h1>
+<h2>Divisible by 2</h2>
+
+<input type="number" class="innum1">
+
+<!-- // <button class="button1" onclick="divby2">Submit</button>  -->
+<button class="btnsubmit1">Submit</button> 
+
+<script>
+    const inNum1 = document.querySelector(".innum1");
+    const btnSubmit1 = document.querySelector(".btnsubmit1");
+
+    btnSubmit1.onclick = () => {
+        const inNum1v = +inNum1.value;
+        inNum1.value = (inNum1v%2 ? +inNum1.value : 0);
+    }
+
+    const divby2 = (num) => {
+        return (num%2 ? num : 0);
+    }
+</script>
+
