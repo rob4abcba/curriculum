@@ -1,0 +1,37 @@
+<h1>Welcome!</h1>
+<h2>JS0</h2>
+<h5>Challenge 1</h5>
+<input type="text" class="intext1">
+<input type="password" class="inpwd1">
+<input type="number" class="innum1">
+<input type="file" class="infile1">
+<button class="btnsubmit1">Submit</button>
+<hr/>
+<script>
+    const button1 = document.querySelector(".btnsubmit1");
+    const inText1 = document.querySelector(".intext1");
+    const inPwd1 = document.querySelector(".inpwd1");
+    const inNum1 = document.querySelector(".innum1");
+    const inFile1 = document.querySelector(".infile1");
+    button1.onclick = () => {
+        alert(inText1.value);
+        alert(inPwd1.value);
+        alert(inNum1.value);
+        alert(inFile1.value);
+        alert(+inText1.value + +inNum1.value);
+        alert(inText1.value + inNum1.value);
+        alert(+inPwd1.value + +inNum1.value);
+        alert(inPwd1.value + inNum1.value);
+        alert(+inFile1.value + +inNum1.value);
+        alert(inFile1.value + inNum1.value);
+        alert("yo2"); 
+        const val = +inNum1.value;
+        inText1.value = val>10;
+        alert("New inText1.value = ");
+        alert(inText1.value);
+    }
+    alert("Zero")
+    alert("Waste!")
+    // What will happen?
+</script>
+    
