@@ -1,0 +1,20 @@
+<!-- Run .html files in browser by RMB clicking the filename in File Exporer and choosing Run in Chrome Browser, then RMB click Inspect to open Chrome DevTools -->
+
+<h1>JS0</h1>
+<h2>challenge7</h2>
+
+<input class="input1" type="number">
+<input class="input2" type="number">
+<button class="button1">Is Sum>10?</button>
+
+<script>
+    const input1dqs = document.querySelector(".input1");
+    const input2dqs = document.querySelector(".input2");
+    const button1dqs = document.querySelector(".button1");
+    button1dqs.onclick = () => {
+        const input1dqsV = +input1dqs.value;
+        const input2dqsV = +input2dqs.value;
+        alert("Is the sum > 10?");
+        alert( input1dqsV+input2dqsV>10 );
+    }
+</script>
