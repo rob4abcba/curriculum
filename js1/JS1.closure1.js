@@ -1,3 +1,4 @@
+// Run .js files at terminal/command prompt using: node JS1.closure1.js 
 const hello3x = () => {
     let counter = 0
     return () => {
